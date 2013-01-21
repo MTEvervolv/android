@@ -89,7 +89,6 @@
 
   <!-- MTDEV Projects -->
   <project path="android" name="android" remote="mt" revision="jellybean" />
-  <project path="build" name="android_build" remote="mt" revision="jellybean" />
   <project path="device/motorola/triumph" name="android_device_motorola_triumph" remote="mt" revision="jellybean" />
   <project path="frameworks/base" name="android_frameworks_base" remote="mt" revision="jellybean" />
   <project path="vendor/ev" name="android_vendor_ev" remote="mt" revision="jellybean" />
