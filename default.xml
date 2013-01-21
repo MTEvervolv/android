@@ -16,7 +16,7 @@
 
 
   <!--Evervolv AOSP Projects-->
-  <project path="build" name="android_build" remote="mt" revision="jellybean" />
+  <project path="build" name="android_build" remote="mt" revision="jellybean">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 <!--  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" revision="jellybean"/>-->
