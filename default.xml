@@ -7,13 +7,15 @@
   <remote  name="github"
            fetch="git://github.com/Evervolv/"
            review="review.evervolv.com"/>
+  <remote  name="mt"
+           fetch="git://github.com/MTEvervolv/" />
+
   <default revision="refs/tags/android-4.2.1_r1"
            remote="aosp"
            sync-j="4" />
 
 
   <!--Evervolv AOSP Projects-->
-  <project path="build" name="android_build" remote="github" revision="jellybean">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 <!--  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" revision="jellybean"/>-->
@@ -40,7 +42,6 @@
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="github" revision="jellybean"/>
   <project path="external/yaffs2" name="android_external_yaffs2" remote="github" revision="jellybean"/>
   <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="jellybean"/>
-  <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="jellybean"/>
   <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="jellybean"/>
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="github" revision="jellybean"/>
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="github" revision="jellybean"/>
@@ -85,9 +86,20 @@
   <project path="system/security" name="android_system_security" remote="github" revision="jellybean" />
   <project path="system/vold" name="android_system_vold" remote="github" revision="jellybean" />
 
+  <!-- MTDEV Projects -->
+  <project path="android" name="android" remote="mt" revision="jellybean" />
+  <project path="build" name="android_build" remote="mt" revision="jellybean" />
+  <project path="device/motorola/triumph" name="android_device_motorola_triumph" remote="mt" revision="jellybean" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="mt" revision="jellybean" />
+  <project path="vendor/ev" name="android_vendor_ev" remote="mt" revision="jellybean" />
+  <project path="vendor/motorola/triumph" name="android_vendor_motorola_triumph" remote="mt" revision="jellybean" />
+  <project path="kernel/motorola/triumph" name="android_kernel_motorola_triumph" remote="mt" revision="ics" />
+
+  <!-- MTDEV Unreleased Projects -->
+  <!-- project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="mt" revision="jellybean" / -->
+  <!-- project path="external/svox" name="android_external_svox" remote="mt" revision="jellybean" / -->
 
   <!--Evervolv Extra Projects-->
-  <project path="android" name="android" remote="github" revision="jellybean" />
   <project path="device/hp/tenderloin" name="android_device_hp_tenderloin" remote="github" revision="jellybean" />
   <project path="device/htc/bravo" name="android_device_htc_bravo" remote="github" revision="jellybean" />
   <project path="device/htc/desirec" name="android_device_htc_desirec" remote="github" revision="jellybean" />
