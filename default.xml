@@ -9,6 +9,8 @@
            review="review.evervolv.com"/>
   <remote  name="mt"
            fetch="git://github.com/MTEvervolv/" />
+  <remote  name="andromadus"
+           fetch="git://github.com/Andromadus/" />
 
   <default revision="refs/tags/android-4.2.1_r1"
            remote="aosp"
@@ -48,7 +50,6 @@
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="github" revision="jellybean"/>
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="jellybean"/>
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="github" revision="jellybean"/>
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="github" revision="jellybean"/>
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="github" revision="jellybean"/>
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="github" revision="jellybean"/>
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="github" revision="jellybean" />
@@ -94,6 +95,7 @@
   <project path="vendor/ev" name="android_vendor_ev" remote="mt" revision="jellybean" />
   <project path="vendor/motorola/triumph" name="android_vendor_motorola_triumph" remote="mt" revision="jellybean" />
   <project path="kernel/motorola/triumph" name="android_kernel_motorola_triumph" remote="mt" revision="ics" />
+  <project path="hardware/qcom/librpc" name="android_hardware_qcom_librpc" remote="andromadus" revision="jellybean" />
 
   <!-- MTDEV Unreleased Projects -->
   <!-- project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="mt" revision="jellybean" / -->
